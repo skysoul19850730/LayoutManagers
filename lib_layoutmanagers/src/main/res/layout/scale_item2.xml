@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    app:cardElevation="0dip"
+    app:cardBackgroundColor="@color/colorAccent"
+    app:cardCornerRadius="3dip"
+    >
+    <!--    app:cardUseCompatPadding="true"-->
+
+    <TextView
+        android:id="@+id/item_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dip"
+        android:drawablePadding="24dip"
+        android:drawableTop="@mipmap/ic_launcher"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        tools:text="Hello World!"/>
+
+</androidx.cardview.widget.CardView>

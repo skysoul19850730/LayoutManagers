@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        app:navigationIcon="@android:drawable/ic_menu_revert"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/main_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        >
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <TextView
+            android:id="@+id/main_tv_recycle_info_1"
+            style="@style/Base.TextAppearance.AppCompat.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            tools:text="Hello World"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true">
+            <Button
+                android:id="@+id/btn_looper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="循环"/>
+            <Button
+                android:id="@+id/btn_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="转圈"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_scalerate"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="缩放比例"/>
+        <EditText
+            android:id="@+id/et_maskrate"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="遮挡比例"
+            android:layout_toRightOf="@id/et_scalerate"/>
+        <EditText
+            android:id="@+id/et_maxshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="最多显示几个"
+            android:layout_below="@id/et_scalerate"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
